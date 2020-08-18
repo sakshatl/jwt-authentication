@@ -13,7 +13,7 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs')
 
 // database connection
-const dbURI = "mongodb+srv://sakshat:test1234@cluster0.ebnyh.mongodb.net/auth-users";
+const dbURI = "mongodb+srv://xxxx:xxxx@cluster0.ebnyh.mongodb.net/auth-users";
 mongoose.connect(dbURI, {useNewUrlParser :  true, useUnifiedTopology : true, useCreateIndex : true})
   .then(() => app.listen(5000, () => console.log("server up and running on port : 5000")))
   .catch((err) => console.log(err))
