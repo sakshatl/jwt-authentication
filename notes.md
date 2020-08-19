@@ -24,9 +24,12 @@ Model View Contoller approach is a codebase organization approach, means we gonn
 5. /logout    GET
 
 
+### handling post routes with postman
 
+1. First we need to use the express json parser middleware to handle json requests [ app.use(express.json()) ]
 
+# User Model using Mongoose
 
-
-
+1. create a models folder and to place all the models in [ User.js ] 
+2. Create a schema for the model
 
