@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const config = require("./config");
+require('dotenv').config();
 
 // import routes
 const authRoutes = require("./routes/authRoutes");
@@ -15,7 +15,7 @@ app.use(express.json());
 app.set('view engine', 'ejs')
 
 // database connection
-const dbURI = `mongodb+srv://${config.dbCreds.dbUsername}:${config.dbCreds.dbPassword}@cluster0.ebnyh.mongodb.net/auth-users`;
+const dbURI = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.ebnyh.mongodb.net/auth-users`;
 mongoose.connect(dbURI, {useNewUrlParser :  true, useUnifiedTopology : true, useCreateIndex : true})
   .then(() => app.listen(5000, () => console.log("server up and running on port : 5000")))
   .catch((err) => console.log(err))
