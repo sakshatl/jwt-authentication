@@ -1,5 +1,6 @@
 <%- include('partials/header'); -%>
-  <form>
+
+  <form class="authForm" id="signupForm">
     <h3>Signup</h3>
     <div class="input-field">
       <input type="email" name="email" placeholder="foo@bar.com" />
@@ -7,9 +8,22 @@
     <div class="input-field">
       <input type="password" name="password" placeholder="******" />
     </div>
+    <p class="error red-text"></p>
     <div>
       <button type="submit" class="btn"> SIGNUP</button>
     </div>
   </form>
+  
+
+  <script>
+    const signupForm = document.querySelector("#signupForm");
+    signupForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      let email = e.target["email"].value;
+      let password = e.target["password"].value;
+      console.log(email, password);
+    })
+  </script>
 
 <%- include('partials/footer'); -%>

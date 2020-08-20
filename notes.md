@@ -33,3 +33,11 @@ Model View Contoller approach is a codebase organization approach, means we gonn
 1. create a models folder and to place all the models in [ User.js ] 
 2. Create a schema for the model
 
+
+
+# Using mongoose hooks to encrypyt and hash the password
+
+
+# Using cookies 
+
+1. cookies parser 

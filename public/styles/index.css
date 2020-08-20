@@ -7,7 +7,31 @@
   font-family: "Quicksand";
 }
 
-.btn {
-  font-family: "Quicksand";
-  font-weight: bolder;
+body{
+  background-color: #f2f2f2;
 }
+
+.btn{
+  font-family: "Quicksand";
+  background-color: #3b0e4a !important;
+}
+
+.btn:hover{
+  font-family: "Quicksand";
+  background-color: #3b0e4a !important;
+}
+
+
+
+ /* form styles */
+ .authForm {
+   max-width: 500px;
+   margin: 30px auto;
+   background-color: #ffffff; 
+   padding: 30px 50px;
+ }
+
+ .authForm h3{
+   font-weight: 600;
+   color: #4d4d4d;
+ }
